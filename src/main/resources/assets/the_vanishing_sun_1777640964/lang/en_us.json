@@ -1,0 +1,19 @@
+{
+  "itemGroup.the_vanishing_sun_1777640964": "The Vanishing Sun",
+  "structure.the_vanishing_sun_1777640964.ruined_lab": "Ruined Laboratory",
+
+  "item.the_vanishing_sun_1777640964.blueprint": "Blueprint",
+  "item.the_vanishing_sun_1777640964.radar": "Radar",
+  "item.the_vanishing_sun_1777640964.locator": "Locator",
+  "item.the_vanishing_sun_1777640964.biological_jar": "Biological Jar",
+  "item.the_vanishing_sun_1777640964.biological_jar.tooltip": "§7Contains: T. Sipunculus nudus - An alien lifeform that feeds on phages",
+  "item.the_vanishing_sun_1777640964.radar.detected": "§b[Radar] §fDetected %s living entities within %s blocks.",
+  "item.the_vanishing_sun_1777640964.locator.use": "§b[Locator] §fSignal transmitted. Guiding incoming payload...",
+
+  "block.the_vanishing_sun_1777640964.blueprint_parsing_station": "Blueprint Parsing Station",
+  "block.the_vanishing_sun_1777640964.blueprint_parsing_station.parsed": "§b[Station] §fBlueprint parsed successfully! Radar and Locator recipes unlocked.",
+  "block.the_vanishing_sun_1777640964.blueprint_parsing_station.no_blueprint": "§cThis station requires a blueprint to operate.",
+  "block.the_vanishing_sun_1777640964.biological_chamber": "Biological Cultivation Chamber",
+
+  "entity.the_vanishing_sun_1777640964.life_pod": "Life Pod"
+}

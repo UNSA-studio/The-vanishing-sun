@@ -1,0 +1,25 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "the_vanishing_sun_1777640964:biological_chamber"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "impossible"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "the_vanishing_sun_1777640964:biological_chamber"
+    ]
+  }
+}

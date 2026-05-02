@@ -1,0 +1,19 @@
+{
+  "itemGroup.the_vanishing_sun_1777640964": "消逝之阳",
+  "structure.the_vanishing_sun_1777640964.ruined_lab": "废弃实验室",
+
+  "item.the_vanishing_sun_1777640964.blueprint": "蓝图",
+  "item.the_vanishing_sun_1777640964.radar": "雷达",
+  "item.the_vanishing_sun_1777640964.locator": "定位器",
+  "item.the_vanishing_sun_1777640964.biological_jar": "生物罐",
+  "item.the_vanishing_sun_1777640964.biological_jar.tooltip": "§7内含: T. Sipunculus nudus - 以噬菌体为食的外星生命",
+  "item.the_vanishing_sun_1777640964.radar.detected": "§b[雷达] §f检测到 %s 个生物，范围 %s 格。",
+  "item.the_vanishing_sun_1777640964.locator.use": "§b[定位器] §f信号已发送，正在引导生命舱着陆...",
+
+  "block.the_vanishing_sun_1777640964.blueprint_parsing_station": "蓝图解析站",
+  "block.the_vanishing_sun_1777640964.blueprint_parsing_station.parsed": "§b[解析站] §f蓝图解析成功！已解锁雷达与定位器合成配方。",
+  "block.the_vanishing_sun_1777640964.blueprint_parsing_station.no_blueprint": "§c该设备需要蓝图才能运行。",
+  "block.the_vanishing_sun_1777640964.biological_chamber": "生物培育仓",
+
+  "entity.the_vanishing_sun_1777640964.life_pod": "生命舱"
+}
