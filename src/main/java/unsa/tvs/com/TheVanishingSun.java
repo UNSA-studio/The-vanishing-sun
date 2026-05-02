@@ -1,12 +1,12 @@
-package cn.autoforged.the_vanishing_sun;
+package unsa.tvs.com;
 
-import cn.autoforged.the_vanishing_sun.block.ModBlocks;
-import cn.autoforged.the_vanishing_sun.datagen.DataGenerators;
-import cn.autoforged.the_vanishing_sun.entity.ModEntities;
-import cn.autoforged.the_vanishing_sun.item.ModItems;
-import cn.autoforged.the_vanishing_sun.screen.ModMenuTypes;
-import cn.autoforged.the_vanishing_sun.ui.ModTabs;
-import cn.autoforged.the_vanishing_sun.worldgen.ModFeatures;
+import unsa.tvs.com.block.ModBlocks;
+import unsa.tvs.com.datagen.DataGenerators;
+import unsa.tvs.com.entity.ModEntities;
+import unsa.tvs.com.item.ModItems;
+import unsa.tvs.com.screen.ModMenuTypes;
+import unsa.tvs.com.ui.ModTabs;
+import unsa.tvs.com.worldgen.ModFeatures;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.Mod;
