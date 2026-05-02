@@ -1,5 +1,6 @@
 package unsa.tvs.com.world;
 
+import net.minecraft.core.HolderLookup;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.level.Level;
@@ -11,7 +12,10 @@ public class SunTimerData extends SavedData {
     private long elapsedTicks = 0;
     private boolean sunExtinguished = false;
 
-    public static SunTimerData load(CompoundTag tag) {
+    private static final SavedData.Factory<SunTimerData> FACTORY =
+        new SavedData.Factory<>(SunTimerData::new, SunTimerData::load);
+
+    public static SunTimerData load(CompoundTag tag, HolderLookup.Provider provider) {
         SunTimerData data = new SunTimerData();
         data.elapsedTicks = tag.getLong("ElapsedTicks");
         data.sunExtinguished = tag.getBoolean("SunExtinguished");
@@ -19,7 +23,7 @@ public class SunTimerData extends SavedData {
     }
 
     @Override
-    public CompoundTag save(CompoundTag tag) {
+    public CompoundTag save(CompoundTag tag, HolderLookup.Provider provider) {
         tag.putLong("ElapsedTicks", this.elapsedTicks);
         tag.putBoolean("SunExtinguished", this.sunExtinguished);
         return tag;
@@ -28,7 +32,7 @@ public class SunTimerData extends SavedData {
     public static SunTimerData get(Level level) {
         if (level instanceof ServerLevel serverLevel) {
             return serverLevel.getDataStorage()
-                .computeIfAbsent(SunTimerData::load, SunTimerData::new, DATA_NAME);
+                .computeIfAbsent(FACTORY, DATA_NAME);
         }
         throw new RuntimeException("Level is not a ServerLevel");
     }
@@ -55,7 +59,6 @@ public class SunTimerData extends SavedData {
     }
 
     public double getBrightnessFactor() {
-        // 从 1.0 (正常) 线性降到 0.0 (全黑)
         long totalTicks = TOTAL_DAYS * 24000L;
         return Math.max(0.0, 1.0 - (double) elapsedTicks / totalTicks);
     }
