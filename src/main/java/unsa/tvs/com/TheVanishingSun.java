@@ -29,9 +29,11 @@ public class TheVanishingSun {
 
         modEventBus.addListener(DataGenerators::gatherData);
         
-        // 注册事件
+        // 太阳熄灭事件
         NeoForge.EVENT_BUS.register(SunExtinctionHandler.class);
-        modEventBus.addListener(TheVanishingSun::onRegisterCommands);
+        
+        // 命令注册必须用 NeoForge.EVENT_BUS
+        NeoForge.EVENT_BUS.addListener(TheVanishingSun::onRegisterCommands);
     }
     
     @SubscribeEvent
