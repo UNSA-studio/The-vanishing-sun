@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "the_vanishing_sun:block/blueprint_parsing_station_bottom",
+    "side": "the_vanishing_sun:block/blueprint_parsing_station_side",
+    "top": "the_vanishing_sun:block/blueprint_parsing_station_top"
+  }
+}
