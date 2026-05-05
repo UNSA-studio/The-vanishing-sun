@@ -38,7 +38,7 @@ public class LocatorItem extends Item {
             pod.addStartingItems(new ItemStack(ModItems.BIOLOGICAL_JAR.get(), 3));
             level.addFreshEntity(pod);
 
-            player.sendSystemMessage(Component.translatable("item.the_vanishing_sun_1777640964.locator.use"));
+            player.sendSystemMessage(Component.translatable("item.the_vanishing_sun.locator.use"));
         }
 
         return InteractionResultHolder.sidedSuccess(stack, level.isClientSide());

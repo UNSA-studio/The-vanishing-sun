@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "the_vanishing_sun_1777640964:item/biological_jar"
-  }
-}

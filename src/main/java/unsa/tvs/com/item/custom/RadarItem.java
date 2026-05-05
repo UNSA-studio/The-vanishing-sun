@@ -26,7 +26,7 @@ public class RadarItem extends Item {
                     entity -> entity != player && entity.isAlive());
 
             player.sendSystemMessage(Component.translatable(
-                    "item.the_vanishing_sun_1777640964.radar.detected",
+                    "item.the_vanishing_sun.radar.detected",
                     entities.size(), (int) DETECTION_RANGE));
         }
 

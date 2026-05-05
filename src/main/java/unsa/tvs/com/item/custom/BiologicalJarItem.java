@@ -17,6 +17,6 @@ public class BiologicalJarItem extends Item {
     @Override
     public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltip, TooltipFlag flag) {
         super.appendHoverText(stack, context, tooltip, flag);
-        tooltip.add(Component.translatable("item." + "the_vanishing_sun_1777640964" + ".biological_jar.tooltip"));
+        tooltip.add(Component.translatable("item." + "the_vanishing_sun" + ".biological_jar.tooltip"));
     }
 }

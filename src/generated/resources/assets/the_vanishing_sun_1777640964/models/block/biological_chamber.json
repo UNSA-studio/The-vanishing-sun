@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/cube_bottom_top",
-  "textures": {
-    "bottom": "the_vanishing_sun_1777640964:block/biological_chamber_bottom",
-    "side": "the_vanishing_sun_1777640964:block/biological_chamber_side",
-    "top": "the_vanishing_sun_1777640964:block/biological_chamber_top"
-  }
-}
